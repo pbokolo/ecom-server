@@ -1,5 +1,6 @@
 // Inclut le module http de Nodejs
 const http = require("node:http");
+const app = require("./app");
 const hostname = "127.0.0.1";
 const port = 3000;
 /**
@@ -10,11 +11,7 @@ const port = 3000;
  * Le premier donne les détails sur la requette
  * Le deuxième est utilisé pour renvoyer de la donnée au client
  */
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-  res.end("Hello World\n");
-});
+const server = http.createServer(app);
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
