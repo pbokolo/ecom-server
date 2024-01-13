@@ -8,4 +8,4 @@ const productSchema = mongoose.Schema({
 });
 
 // Exports the model to make it usable
-module.exports = mongoose.model("Product", productSchema);
+module.exports = mongoose.model("Products", productSchema);

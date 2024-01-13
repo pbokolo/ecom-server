@@ -2,7 +2,7 @@
 const http = require("node:http");
 const app = require("./app");
 const hostname = "127.0.0.1";
-const port = 3000;
+const port = 2002;
 /**
  * La méthode createServer de http crée et renvoie un serveur http
  * A chaque fois qu'une requêtte est reçue, l'évènement requette est déclenchée
